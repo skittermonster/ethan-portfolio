@@ -67,16 +67,16 @@ const Contact = () => {
 
     emailjs
       .send(
-        "service_3t69jop",
-        "template_0sud9sl",
+        "service_r2i0by4",
+        "template_mf5x3bh",
         {
           from_name: form.name,
-          to_name: "Ethan Lum",
+          to_name: "Lohit Kolluri",
           from_email: form.email,
-          to_email: "zerbsteve@gmail.com",
+          to_email: "lohitkolluri@gmail.com",
           message: form.message,
         },
-        "NiWKs8UO1KTzQ5rqw"
+        "p-gXzzyvEhPaJ0XA-"
       )
       .then(
         () => {

@@ -9,8 +9,8 @@ const Navbar = () => {
   const [toggle, setToggle] = useState(false);
 
   const toggleResume = () => {
-    const resumeUrl = `${import.meta.env.BASE_URL}Resume.pdf`;
-    window.open(resumeUrl, '_blank');
+    const resumeUrl = '/Resume.pdf';
+    window.open(resumeUrl);
   };
 
   useEffect(() => {
@@ -61,10 +61,10 @@ const Navbar = () => {
               window.scrollTo(0, 0);
             }}
           >
-            
+            <img src={logo} alt="logo" className="w-9 h-9 object-contain" />
             <p className="text-white text-[20px] font-bold cursor-pointer flex">
-              ETHAN&nbsp;
-              <span className="sm:block hidden">LUM</span>
+              LOHIT&nbsp;
+              <span className="sm:block hidden">KOLLURI</span>
             </p>
           </Link>
           {renderNavLinks(false)}

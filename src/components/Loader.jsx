@@ -1,32 +1,24 @@
-// loader.jsx
-import React from "react";
 import { Html, useProgress } from "@react-three/drei";
 
 const CanvasLoader = () => {
   const { progress } = useProgress();
 
-  const overlayStyle = {
-    position: "absolute",
-    top: 0,
-    left: 0,
-    right: 0,
-    bottom: 0,
+  const containerStyle = {
     display: "flex",
-    flexDirection: "column",
     justifyContent: "center",
     alignItems: "center",
-    gap: "1rem",       // spacing instead of marginTop
-    pointerEvents: "none"
+    flexDirection: "column",
   };
 
   const textStyle = {
     fontSize: 14,
     color: "#F1F1F1",
     fontWeight: 800,
+    marginTop: 40,
   };
 
   return (
-    <Html as="div" style={overlayStyle}>
+    <Html as="div" center style={containerStyle}>
       <span className="canvas-loader" />
       <p style={textStyle}>{progress.toFixed(2)}%</p>
     </Html>
