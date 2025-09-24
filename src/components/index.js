@@ -18,7 +18,7 @@ export {
   Navbar,
   About,
   Tech,
-  Experience,
+ // Experience,
   Works,
   Contact,
   EarthCanvas,
