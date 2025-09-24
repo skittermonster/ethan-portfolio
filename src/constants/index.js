@@ -28,25 +28,19 @@ export const navLinks = [
     title: "About",
   },
   {
-    id: "experience",
+    id: "work",
     title: "Work",
   },
   {
     id: "contact",
     title: "Contact",
   },
-
-  {
-    id: "Works",
-    title: "Projects",  
-  },
-  
 ];
 
 export const services = [
-  { title: "FL Studio", icon: c },
-  { title: "Figma", icon: cpp },
-  { title: "React", icon: python },
+  { title: "C", icon: c },
+  { title: "C++", icon: cpp },
+  { title: "Python", icon: python },
   { title: "Java", icon: java },
 ];
 
@@ -61,7 +55,7 @@ export const technologies = [
   { name: "git", icon: git },
 ];
 
-export const experiences = [  
+export const experiences = [
   {
     title: "AI/ML Intern",
     company_name: "EduSkill Foundation | AWS Academy | AICTE",
@@ -101,53 +95,52 @@ export const experiences = [
 
 export const projects = [
   {
-    name: "LorAstley",
+    name: "WeatherPedia",
     description:
-      "LoRAstley is a LoRA for SDXL 1.0 that generates 1024x1024 images of Rick Astley specifically from the Never Gonna Give You Up video that can be run in ComfyUI.",
+      "Web-based platform that allows users to access weather information for their location by entering it in the search field",
     tags: [
-      { name: "AI ", color: "blue-text-gradient" },
-      { name: "Machine Learning", color: "green-text-gradient" },
-      { name: "ComfyUI", color: "pink-text-gradient" },
-      { name: "LoRA", color: "yellow-text-gradient" },
+      { name: "Javascript", color: "blue-text-gradient" },
+      { name: "HTML", color: "green-text-gradient" },
+      { name: "bootstrap 5.3.0", color: "pink-text-gradient" },
+      { name: "Weather API by API Ninjas", color: "yellow-text-gradient" },
     ],
     image: weatherpedia,
-    source_code_link: "https://drive.google.com/file/d/1rrA42BxN8ST37wWfGWyCEqFKgU2H0Dc8/view?usp=sharing",
+    source_code_link: "https://github.com/lohitkolluri/WeatherPedia",
   },
   {
-    name: "Pixel Doggo Sensor-Driven Interactive Dog Robot",
+    name: "Terminal Like Portfolio Website",
     description:
-      "A sensor-driven interactive dog robot that responds to user commands and environmental stimuli, showcasing robotics and AI integration.",
+      "A terminal themed portfolio website that allows users to type into the terminal and use commands like a real terminal.",
     tags: [
-      { name: "Java", color: "blue-text-gradient" },
-      { name: "Arduino", color: "green-text-gradient" },
-      { name: "Robotics", color: "pink-text-gradient" },
+      { name: "HTML", color: "blue-text-gradient" },
+      { name: "css", color: "green-text-gradient" },
+      { name: "Javascript", color: "pink-text-gradient" },
     ],
     image: termpw,
-    source_code_link: "https://www.sfu.ca/siat/showcase/spring-2024-project-showcase/iat-267-pixeldoggo.html",
+    source_code_link: "https://github.com/lohitkolluri/lohitkolluri.github.io",
   },
   {
-    name: "Interference - A Unity 2D Stealth Platformer Game",
+    name: "Mental Health Fitness Tracker",
     description:
-      "A 2D stealth platformer game where players navigate through levels, avoiding enemies and obstacles, using Unity's physics and animation systems.",
+      "ML model that utilizes regression techniques to provide insights into mental health and make predictions based on the available data.",
     tags: [
-      { name: "C#", color: "blue-text-gradient" },
-      { name: "Unity", color: "green-text-gradient" },
-      { name: "Game Development", color: "pink-text-gradient" },
+      { name: "Machine Learning", color: "blue-text-gradient" },
+      { name: "Jupyter Notebook", color: "green-text-gradient" },
+      { name: "Regression Algorithms", color: "pink-text-gradient" },
     ],
     image: mhft,
     source_code_link:
-      "https://github.com/skittermonster/InterferenceGame",
+      "https://github.com/lohitkolluri/mental_health_fitness_tracker",
   },
   {
-    name: "Hidden Gems",
+    name: "PayloadMaster",
     description:
-      "A mobile application that helps users discover niche movies in their city, providing personalized recommendations based on user preferences and location.",
+      "Tool to automate payload creation using the Metasploit framework",
     tags: [
-      { name: "React Native", color: "blue-text-gradient" },
-      { name: "Java Script", color: "blue-text-gradient" },
+      { name: "shell", color: "blue-text-gradient" },
     ],
     image: payloadmaster,
-    source_code_link: "https://github.com/skittermonster/iat359hiddengems",
+    source_code_link: "https://github.com/lohitkolluri/PayloadMaster",
   },
   {
     name: "CompileVortex",
@@ -162,16 +155,16 @@ export const projects = [
     source_code_link: "https://github.com/lohitkolluri/CompileVortex",
   },
   {
-    name: "Short Filmmmmmmmmm",
+    name: "Sketcher",
     description:
-      "A short film crime drama and comedy that explores the themes of revenge and justice, showcasing the journey of a protagonist",
+      "Convert an input image to a pencil sketch using OpenCV and Matplotlib libraries.",
     tags: [
-      { name: "Video Editing", color: "blue-text-gradient" },
-      { name: "Sound Mixing", color: "green-text-gradient" },
-      { name: "Sound Recording", color: "pink-text-gradient" },
+      { name: "OpenCV", color: "blue-text-gradient" },
+      { name: "Matplotlib", color: "green-text-gradient" },
+      { name: "Python", color: "pink-text-gradient" },
     ],
 
-    image: skibidi,
-    source_code_link: "https://youtu.be/Ca0wcVypnqY?si=DoAwfyRxj8RKss2l",
+    image: sketcher,
+    source_code_link: "https://github.com/lohitkolluri/Image_to_Pencil_Sketch_App",
   },
 ];
