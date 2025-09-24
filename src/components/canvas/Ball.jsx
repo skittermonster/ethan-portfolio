@@ -31,4 +31,6 @@ const BallCanvas = ({ icon }) => {
   );
 };
 
-export default BallCanvas;
+export default function BallCanvas() {
+  return null;
+}
