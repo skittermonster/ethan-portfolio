@@ -97,12 +97,12 @@ export const projects = [
   {
     name: "LoRAsley",
     description:
-      "Web-based platform that allows users to access weather information for their location by entering it in the search field",
+      "Interactive LoRA-based generative AI system (ComfyUI) that creates Rick Astley images and transforms user voices in real time; fine-tuned model parameters for better alignment and presented in a live demo to 20+ peers.",
     tags: [
-      { name: "Javascript", color: "blue-text-gradient" },
-      { name: "HTML", color: "green-text-gradient" },
-      { name: "bootstrap 5.3.0", color: "pink-text-gradient" },
-      { name: "Weather API by API Ninjas", color: "yellow-text-gradient" },
+      { name: "ComfyUI", color: "blue-text-gradient" },
+      { name: "LoRA", color: "green-text-gradient" },
+      { name: "Generative AI", color: "pink-text-gradient" },
+      { name: "Real-time Audio", color: "yellow-text-gradient" },
     ],
     image: weatherpedia,
     source_code_link: "https://github.com/lohitkolluri/WeatherPedia",
@@ -122,11 +122,12 @@ export const projects = [
   {
     name: "Interference",
     description:
-      "ML model that utilizes regression techniques to provide insights into mental health and make predictions based on the available data.",
+      "2D stealth platformer built in Unity (C#) featuring AI-driven guards, physics-based movement, and multi-level stealth; led a 5-person team and coordinated playtesting with 15 users to balance difficulty.",
     tags: [
-      { name: "Machine Learning", color: "blue-text-gradient" },
-      { name: "Jupyter Notebook", color: "green-text-gradient" },
-      { name: "Regression Algorithms", color: "pink-text-gradient" },
+      { name: "Unity", color: "blue-text-gradient" },
+      { name: "C#", color: "green-text-gradient" },
+      { name: "AI Guards", color: "pink-text-gradient" },
+      { name: "2D Platformer", color: "yellow-text-gradient" },
     ],
     image: mhft,
     source_code_link:
@@ -135,9 +136,12 @@ export const projects = [
   {
     name: "Hidden Gems",
     description:
-      "Tool to automate payload creation using the Metasploit framework",
+      "React Native + Firebase mobile app recommending niche films based on preferences and location; personalized filters improved test user engagement by 30% and UI/UX refined via usability testing.",
     tags: [
-      { name: "shell", color: "blue-text-gradient" },
+      { name: "React Native", color: "blue-text-gradient" },
+      { name: "Firebase", color: "green-text-gradient" },
+      { name: "JavaScript", color: "pink-text-gradient" },
+      { name: "Mobile App", color: "yellow-text-gradient" },
     ],
     image: payloadmaster,
     source_code_link: "https://github.com/lohitkolluri/PayloadMaster",
@@ -145,11 +149,12 @@ export const projects = [
   {
     name: "Lumina",
     description:
-      "Tool to automate payload creation using the Metasploit framework",
+      "Hackathon project: AI-powered recruiting platform that automates resume screening and GitHub portfolio analysis using a 4-phase agentic workflow with Google Gemini; responsive Next.js + Tailwind UI with real-time analysis visualizations.",
     tags: [
-      { name: "Javascript", color: "blue-text-gradient" },
-      { name: "CSS", color: "green-text-gradient" },
-      { name: "HTML", color: "pink-text-gradient" },
+      { name: "Next.js", color: "blue-text-gradient" },
+      { name: "Tailwind CSS", color: "green-text-gradient" },
+      { name: "Gemini AI", color: "pink-text-gradient" },
+      { name: "Agentic Workflow", color: "yellow-text-gradient" },
     ],
     image: CompileVortex,
     source_code_link: "https://github.com/lohitkolluri/CompileVortex",
