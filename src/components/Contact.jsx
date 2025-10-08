@@ -17,7 +17,7 @@ const InputField = ({ label, value, onChange, placeholder, name, type }) => (
       value={value}
       onChange={onChange}
       placeholder={placeholder}
-      className="bg-tertiary py-4 px-6 placeholder:text-secondary text-white rounded-lg outline-none border-none font-medium"
+      className="bg-tertiary/80 backdrop-blur-sm py-4 px-6 placeholder:text-secondary text-white rounded-lg outline-none border border-white/10 font-medium focus:ring-2 focus:ring-indigo-500/50 transition"
     />
   </label>
 );
@@ -99,7 +99,7 @@ const Contact = () => {
 
   return (
     <div className={`xl:mt-12 flex xl:flex-row flex-col-reverse gap-10 overflow-hidden`}>
-      <motion.div variants={slideIn("left", "tween", 0.2, 1)} className="flex-[0.75] bg-black-100 p-8 rounded-2xl">
+      <motion.div variants={slideIn("left", "tween", 0.2, 1)} className="flex-[0.75] glass p-8 rounded-2xl">
         <p className={styles.sectionSubText}>Get in touch</p>
         <h3 className={styles.sectionHeadText}>Contact Me</h3>
 
@@ -135,7 +135,7 @@ const Contact = () => {
 
           <button
             type="submit"
-            className="bg-tertiary py-3 px-8 rounded-xl outline-none w-fit text-white font-bold shadow-md shadow-primary"
+            className="px-6 py-3 rounded-full bg-gradient-to-r from-indigo-500 to-cyan-400 text-white font-bold shadow transition-transform duration-200 hover:scale-[1.02] w-fit"
           >
             {loading ? "Sending..." : "Send"}
           </button>

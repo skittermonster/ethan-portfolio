@@ -42,7 +42,12 @@ const Navbar = () => {
           isSecondary ? 'secondary' : 'white'
         } hover:text-white text-[20px] font-medium cursor-pointer`}
       >
-        <button onClick={toggleResume}>Resume</button>
+        <button
+          onClick={toggleResume}
+          className="px-4 py-2 rounded-full bg-gradient-to-r from-indigo-500 to-cyan-400 text-white shadow transition-transform duration-200 hover:scale-[1.03]"
+        >
+          Resume
+        </button>
       </li>
     </ul>
   );
@@ -50,7 +55,7 @@ const Navbar = () => {
   return (
     <>
       <nav
-        className={`${styles.paddingX} w-full flex items-center py-3 fixed top-0 z-20 bg-primary`}
+        className={`${styles.paddingX} w-full flex items-center py-3 fixed top-0 z-20 bg-primary/70 backdrop-blur-md border-b border-white/10`}
       >
         <div className="w-full flex justify-between items-center max-w-7xl mx-auto">
           <Link
@@ -76,7 +81,7 @@ const Navbar = () => {
               onClick={() => setToggle(!toggle)}
             />
             <div
-              className={`p-4 black-gradient absolute top-14 right-0 mx-2 my-2 min-w-[120px] z-10 rounded-xl foggy-glass ${
+              className={`p-4 absolute top-14 right-0 mx-2 my-2 min-w-[140px] z-10 rounded-xl glass ${
                 toggle ? 'flex' : 'hidden'
               }`}
             >

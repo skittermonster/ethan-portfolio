@@ -13,11 +13,11 @@ const ProjectCard = ({ name, description, tags, image, source_code_link }) => {
     <motion.div variants={fadeIn("up", "spring")}>
       <Tilt
         options={{
-          max: 45,
+          max: 10,
           scale: 1,
-          speed: 450,
+          speed: 300,
         }}
-        className="bg-tertiary p-5 rounded-2xl sm:w-[360px] w-full"
+        className="group bg-tertiary/80 backdrop-blur-sm border border-white/10 p-5 rounded-2xl sm:w-[360px] w-full transition-all duration-300 hover:-translate-y-1 hover:shadow-card hover:border-white/20"
       >
         <div className="relative w-full h-[230px]">
           <img
@@ -25,22 +25,23 @@ const ProjectCard = ({ name, description, tags, image, source_code_link }) => {
             alt="project_image"
             className="w-full h-full object-cover rounded-2xl"
           />
+          <div className="absolute inset-0 bg-gradient-to-t from-black/40 via-transparent to-transparent opacity-0 group-hover:opacity-100 transition-opacity duration-300 rounded-2xl" />
           <div className="absolute inset-0 flex justify-end m-3 card-img_hover">
             <div
               onClick={() => window.open(source_code_link, "_blank")}
-              className="black-gradient w-10 h-10 rounded-full flex justify-center items-center cursor-pointer"
+              className="glass w-10 h-10 rounded-full flex justify-center items-center cursor-pointer hover:scale-105 transition"
             >
               <img src={github} alt="source code" className="w-1/2 h-1/2 object-contain" />
             </div>
           </div>
         </div>
         <div className="mt-5">
-          <h3 className="text-white font-bold text-[24px]">{name}</h3>
+          <h3 className="text-white font-bold text-[24px] tracking-tight">{name}</h3>
           <p className="mt-2 text-secondary text-[14px]">{description}</p>
         </div>
         <div className="mt-4 flex flex-wrap gap-2">
           {tags.map((tag) => (
-            <p key={tag.name} className={`text-[14px] ${tag.color}`}>
+            <p key={tag.name} className={`text-[13px] ${tag.color} px-2 py-0.5 rounded-full bg-white/5 border border-white/10`}>
               #{tag.name}
             </p>
           ))}
