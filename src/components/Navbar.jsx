@@ -9,8 +9,10 @@ const Navbar = () => {
   const [toggle, setToggle] = useState(false);
 
   const toggleResume = () => {
-    const resumeUrl = `${import.meta.env.BASE_URL}Resume.pdf`;
-    window.open(resumeUrl, '_blank');
+    const base = (import.meta.env && import.meta.env.BASE_URL) || '/';
+    const normalizedBase = base.endsWith('/') ? base : `${base}/`;
+    const resumeUrl = new URL('Resume.pdf', window.location.origin + normalizedBase).toString();
+    window.open(resumeUrl, '_blank', 'noopener,noreferrer');
   };
 
   useEffect(() => {
