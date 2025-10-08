@@ -95,7 +95,7 @@ export const experiences = [
 
 export const projects = [
   {
-    name: "WeatherPedia",
+    name: "LoRAsley",
     description:
       "Web-based platform that allows users to access weather information for their location by entering it in the search field",
     tags: [
@@ -120,7 +120,7 @@ export const projects = [
     source_code_link: "https://github.com/lohitkolluri/lohitkolluri.github.io",
   },
   {
-    name: "Mental Health Fitness Tracker",
+    name: "Interference",
     description:
       "ML model that utilizes regression techniques to provide insights into mental health and make predictions based on the available data.",
     tags: [
@@ -133,7 +133,7 @@ export const projects = [
       "https://github.com/lohitkolluri/mental_health_fitness_tracker",
   },
   {
-    name: "PayloadMaster",
+    name: "Hidden Gems",
     description:
       "Tool to automate payload creation using the Metasploit framework",
     tags: [
@@ -143,7 +143,7 @@ export const projects = [
     source_code_link: "https://github.com/lohitkolluri/PayloadMaster",
   },
   {
-    name: "CompileVortex",
+    name: "Lumina",
     description:
       "Tool to automate payload creation using the Metasploit framework",
     tags: [
