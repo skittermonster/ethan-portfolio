@@ -171,6 +171,6 @@ export const projects = [
     ],
 
     image: sketcher,
-    source_code_link: "#",
+    source_code_link: "https://www.youtube.com/watch?v=6_yl6zeRr0A",
   },
 ];
