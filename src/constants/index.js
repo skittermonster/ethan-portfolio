@@ -108,16 +108,16 @@ export const projects = [
     source_code_link: "https://github.com/lohitkolluri/WeatherPedia",
   },
   {
-    name: "Terminal Like Portfolio Website",
+    name: "PixelDoggo",
     description:
-      "A terminal themed portfolio website that allows users to type into the terminal and use commands like a real terminal.",
+      "An interactive dog that you can pet, wave at, or pull the tail. The dog will fall asleep if the room goes dark. If the tail is pulled, the dog gets mad, and if you pet the dog or wave he gets happy and his arm moves.",
     tags: [
-      { name: "HTML", color: "blue-text-gradient" },
-      { name: "css", color: "green-text-gradient" },
-      { name: "Javascript", color: "pink-text-gradient" },
+      { name: "Java", color: "blue-text-gradient" },
+      { name: "Arduino", color: "green-text-gradient" },
     ],
     image: termpw,
-    source_code_link: "https://github.com/lohitkolluri/lohitkolluri.github.io",
+    source_code_link:
+      "https://www.sfu.ca/siat/showcase/spring-2024-project-showcase/iat-267-pixeldoggo.html",
   },
   {
     name: "Interference",
