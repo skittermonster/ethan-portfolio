@@ -160,16 +160,17 @@ export const projects = [
     source_code_link: "https://github.com/lohitkolluri/CompileVortex",
   },
   {
-    name: "Sketcher",
+    name: "Small But Mighty",
     description:
-      "Convert an input image to a pencil sketch using OpenCV and Matplotlib libraries.",
+      "Team-produced 3D animated short made in Maya about a badminton showdown between underdog hamster Meep and octopus Mr. Takoyakiman; blends comedic timing, expressive acting, and fast-paced action to explore perseverance and success.",
     tags: [
-      { name: "OpenCV", color: "blue-text-gradient" },
-      { name: "Matplotlib", color: "green-text-gradient" },
-      { name: "Python", color: "pink-text-gradient" },
+      { name: "Maya", color: "blue-text-gradient" },
+      { name: "3D Animation", color: "green-text-gradient" },
+      { name: "Short Film", color: "pink-text-gradient" },
+      { name: "Team of 5", color: "yellow-text-gradient" },
     ],
 
     image: sketcher,
-    source_code_link: "https://github.com/lohitkolluri/Image_to_Pencil_Sketch_App",
+    source_code_link: "#",
   },
 ];
