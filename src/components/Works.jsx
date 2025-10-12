@@ -17,7 +17,8 @@ const ProjectCard = ({ name, description, tags, image, source_code_link }) => {
           scale: 1,
           speed: 300,
         }}
-        className="group bg-tertiary/80 backdrop-blur-sm border border-white/10 p-5 rounded-2xl sm:w-[360px] w-full transition-all duration-300 hover:-translate-y-1 hover:shadow-card hover:border-white/20"
+        onClick={() => window.open(source_code_link, "_blank")}
+        className="group bg-tertiary/80 backdrop-blur-sm border border-white/10 p-5 rounded-2xl sm:w-[360px] w-full transition-all duration-300 hover:-translate-y-1 hover:shadow-card hover:border-white/20 cursor-pointer"
       >
         <div className="relative w-full h-[230px]">
           <img
@@ -28,7 +29,10 @@ const ProjectCard = ({ name, description, tags, image, source_code_link }) => {
           <div className="absolute inset-0 bg-gradient-to-t from-black/40 via-transparent to-transparent opacity-0 group-hover:opacity-100 transition-opacity duration-300 rounded-2xl" />
           <div className="absolute inset-0 flex justify-end m-3 card-img_hover">
             <div
-              onClick={() => window.open(source_code_link, "_blank")}
+              onClick={(e) => {
+                e.stopPropagation();
+                window.open(source_code_link, "_blank");
+              }}
               className="glass w-10 h-10 rounded-full flex justify-center items-center cursor-pointer hover:scale-105 transition"
             >
               <img src={github} alt="source code" className="w-1/2 h-1/2 object-contain" />
