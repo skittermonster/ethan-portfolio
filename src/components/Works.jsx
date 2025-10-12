@@ -10,14 +10,16 @@ import { fadeIn, textVariant } from "../utils/motion";
 
 const ProjectCard = ({ name, description, tags, image, source_code_link }) => {
   return (
-    <motion.div variants={fadeIn("up", "spring")}>
+    <motion.div
+      variants={fadeIn("up", "spring")}
+      onClick={() => window.open(source_code_link, "_blank")}
+    >
       <Tilt
         options={{
           max: 10,
           scale: 1,
           speed: 300,
         }}
-        onClick={() => window.open(source_code_link, "_blank")}
         className="group bg-tertiary/80 backdrop-blur-sm border border-white/10 p-5 rounded-2xl sm:w-[360px] w-full transition-all duration-300 hover:-translate-y-1 hover:shadow-card hover:border-white/20 cursor-pointer"
       >
         <div className="relative w-full h-[230px]">
