@@ -131,7 +131,7 @@ export const projects = [
     ],
     image: mhft,
     source_code_link:
-      "https://github.com/lohitkolluri/mental_health_fitness_tracker",
+      "https://skittermonster.itch.io/interferencegame",
   },
   {
     name: "Hidden Gems",
