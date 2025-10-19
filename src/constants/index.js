@@ -41,11 +41,19 @@ export const services = [
   { title: "FL Studio", icon: c },
   { title: "Figma", icon: cpp },
   { title: "React", icon: python },
+<<<<<<< HEAD
   { title: "javascript", icon: java },
   { title: "maya", icon: reactjs },
   { title: "comfyui", icon: javascript },
   { title: "n8n", icon: html },
   { title: "Resolve", icon: css },
+=======
+  { title: "JavaScript", icon: java },
+  { title: "Maya", icon: reactjs },
+  { title: "ComfyUI", icon: javascript },
+  { title: "n8n", icon: html },
+  { title: "DaVinci Resolve", icon: css },
+>>>>>>> b50a8a07ef960a7e4bf6fe629604d6ee916872c9
 ];
 
 export const technologies = [
