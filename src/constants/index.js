@@ -38,15 +38,14 @@ export const navLinks = [
 ];
 
 export const services = [
-  { title: "C", icon: c },
-  { title: "C++", icon: cpp },
-  { title: "Python", icon: python },
-  { title: "Java", icon: java },
-  // Placeholder cards for previewing layout
-  { title: "Placeholder 1", icon: reactjs },
-  { title: "Placeholder 2", icon: javascript },
-  { title: "Placeholder 3", icon: html },
-  { title: "Placeholder 4", icon: css },
+  { title: "FL Studio", icon: c },
+  { title: "Figma", icon: cpp },
+  { title: "React", icon: python },
+  { title: "javascript", icon: java },
+  { title: "maya", icon: reactjs },
+  { title: "comfyui", icon: javascript },
+  { title: "n8n", icon: html },
+  { title: "Resolve", icon: css },
 ];
 
 export const technologies = [
