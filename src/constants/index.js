@@ -109,7 +109,7 @@ export const projects = [
       { name: "Real-time Audio", color: "yellow-text-gradient" },
     ],
     image: weatherpedia,
-    source_code_link: "https://github.com/lohitkolluri/WeatherPedia",
+    source_code_link: "https://drive.google.com/file/d/1rrA42BxN8ST37wWfGWyCEqFKgU2H0Dc8/view?usp=sharing",
   },
   {
     name: "PixelDoggo",
@@ -161,7 +161,7 @@ export const projects = [
       { name: "Agentic Workflow", color: "yellow-text-gradient" },
     ],
     image: CompileVortex,
-    source_code_link: "https://github.com/lohitkolluri/CompileVortex",
+    source_code_link: "https://devpost.com/software/lumina-hq152s?",
   },
   {
     name: "Small But Mighty",
