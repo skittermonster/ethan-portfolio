@@ -42,7 +42,7 @@ export const services = [
   { title: "Figma", icon: cpp },
   { title: "React", icon: python },
   { title: "javascript", icon: java },
-  { title: "maya", icon: reactjs },
+  { title: "Blender", icon: reactjs },
   { title: "comfyui", icon: javascript },
   { title: "n8n", icon: html },
   { title: "Resolve", icon: css },
