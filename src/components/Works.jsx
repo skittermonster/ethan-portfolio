@@ -11,6 +11,7 @@ import { fadeIn, textVariant } from "../utils/motion";
 const ProjectCard = ({ name, description, tags, image, source_code_link }) => {
   return (
     <motion.div
+      className="h-full"
       variants={fadeIn("up", "spring")}
       onClick={() => window.open(source_code_link, "_blank")}
     >
@@ -20,7 +21,7 @@ const ProjectCard = ({ name, description, tags, image, source_code_link }) => {
           scale: 1,
           speed: 300,
         }}
-        className="group bg-tertiary/80 backdrop-blur-sm border border-white/10 p-5 rounded-2xl sm:w-[360px] w-full transition-all duration-300 hover:-translate-y-1 hover:shadow-card hover:border-white/20 cursor-pointer"
+        className="group bg-tertiary/80 backdrop-blur-sm border border-white/10 p-5 rounded-2xl h-full sm:min-h-[500px] flex flex-col transition-all duration-300 hover:-translate-y-1 hover:shadow-card hover:border-white/20 cursor-pointer"
       >
         <div className="relative w-full h-[230px]">
           <img
@@ -41,11 +42,11 @@ const ProjectCard = ({ name, description, tags, image, source_code_link }) => {
             </div>
           </div>
         </div>
-        <div className="mt-5">
+        <div className="mt-5 flex flex-col flex-grow">
           <h3 className="text-white font-bold text-[24px] tracking-tight">{name}</h3>
-          <p className="mt-2 text-secondary text-[14px]">{description}</p>
+          <p className="mt-2 text-secondary text-[14px] line-clamp-3">{description}</p>
         </div>
-        <div className="mt-4 flex flex-wrap gap-2">
+        <div className="mt-4 flex flex-wrap gap-2 mt-auto">
           {tags.map((tag) => (
             <p key={tag.name} className={`text-[13px] ${tag.color} px-2 py-0.5 rounded-full bg-white/5 border border-white/10`}>
               #{tag.name}
@@ -71,7 +72,7 @@ const Works = () => {
           repositories in it.
         </motion.p>
       </div>
-      <div className="mt-20 flex flex-wrap gap-7">
+      <div className="mt-20 grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 gap-7 items-stretch">
         {projects.map((project, index) => (
           <ProjectCard key={`project-${index}`} {...project} />
         ))}

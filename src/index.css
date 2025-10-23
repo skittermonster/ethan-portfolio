@@ -167,3 +167,11 @@
 .confirmation {
   color: #00ff00;
 }
+
+/* Limit text to exactly three lines with ellipsis */
+.line-clamp-3 {
+  display: -webkit-box;
+  -webkit-line-clamp: 3;
+  -webkit-box-orient: vertical;
+  overflow: hidden;
+}
