@@ -112,16 +112,17 @@ export const projects = [
     source_code_link: "https://drive.google.com/file/d/1rrA42BxN8ST37wWfGWyCEqFKgU2H0Dc8/view?usp=sharing",
   },
   {
-    name: "PixelDoggo",
+    name: "Lumina",
     description:
-      "An interactive dog that you can pet, wave at, or pull the tail. The dog will fall asleep if the room goes dark. If the tail is pulled, the dog gets mad, and if you pet the dog or wave he gets happy and his arm moves.",
+      "Hackathon project: AI-powered recruiting platform that automates resume screening and GitHub portfolio analysis using a 4-phase agentic workflow with Google Gemini; responsive Next.js + Tailwind UI with real-time analysis visualizations.",
     tags: [
-      { name: "Java", color: "blue-text-gradient" },
-      { name: "Arduino", color: "green-text-gradient" },
+      { name: "Next.js", color: "blue-text-gradient" },
+      { name: "Tailwind CSS", color: "green-text-gradient" },
+      { name: "Gemini AI", color: "pink-text-gradient" },
+      { name: "Agentic Workflow", color: "yellow-text-gradient" },
     ],
-    image: termpw,
-    source_code_link:
-      "https://www.sfu.ca/siat/showcase/spring-2024-project-showcase/iat-267-pixeldoggo.html",
+    image: CompileVortex,
+    source_code_link: "https://devpost.com/software/lumina-hq152s?",
   },
   {
     name: "Interference",
@@ -151,17 +152,16 @@ export const projects = [
     source_code_link: "https://github.com/skittermonster/iat359hiddengems",
   },
   {
-    name: "Lumina",
+    name: "PixelDoggo",
     description:
-      "Hackathon project: AI-powered recruiting platform that automates resume screening and GitHub portfolio analysis using a 4-phase agentic workflow with Google Gemini; responsive Next.js + Tailwind UI with real-time analysis visualizations.",
+      "An interactive dog that you can pet, wave at, or pull the tail. The dog will fall asleep if the room goes dark. If the tail is pulled, the dog gets mad, and if you pet the dog or wave he gets happy and his arm moves.",
     tags: [
-      { name: "Next.js", color: "blue-text-gradient" },
-      { name: "Tailwind CSS", color: "green-text-gradient" },
-      { name: "Gemini AI", color: "pink-text-gradient" },
-      { name: "Agentic Workflow", color: "yellow-text-gradient" },
+      { name: "Java", color: "blue-text-gradient" },
+      { name: "Arduino", color: "green-text-gradient" },
     ],
-    image: CompileVortex,
-    source_code_link: "https://devpost.com/software/lumina-hq152s?",
+    image: termpw,
+    source_code_link:
+      "https://www.sfu.ca/siat/showcase/spring-2024-project-showcase/iat-267-pixeldoggo.html",
   },
   {
     name: "Small But Mighty",
