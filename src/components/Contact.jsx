@@ -1,12 +1,19 @@
-import React, { useRef, useState } from "react";
-import { motion } from "framer-motion";
+import React, { useRef, useState, Suspense, lazy } from "react";
+import { motion, useInView } from "framer-motion";
 import emailjs from "@emailjs/browser";
 
 import { styles } from "../styles";
-import { EarthCanvas } from "./canvas";
 import { SectionWrapper } from "../hoc";
 import { slideIn } from "../utils/motion";
 import "../index.css";
+
+const EarthCanvas = lazy(() => import("./canvas/Earth"));
+
+const DOMSpinner = () => (
+  <div className="flex flex-col items-center justify-center">
+    <div className="w-12 h-12 border-4 border-indigo-500 border-t-transparent rounded-full animate-spin" />
+  </div>
+);
 
 const InputField = ({ label, value, onChange, placeholder, name, type }) => (
   <label className="flex flex-col">
@@ -24,6 +31,8 @@ const InputField = ({ label, value, onChange, placeholder, name, type }) => (
 
 const Contact = () => {
   const formRef = useRef();
+  const earthContainerRef = useRef(null);
+  const isEarthInView = useInView(earthContainerRef, { once: true, margin: "250px" });
   const [form, setForm] = useState({
     name: "",
     email: "",
@@ -143,8 +152,18 @@ const Contact = () => {
         </form>
       </motion.div>
 
-      <motion.div variants={slideIn("right", "tween", 0.2, 1)} className="xl:flex-1 xl:h-auto md:h-[550px] h-[350px]">
-        <EarthCanvas />
+      <motion.div
+        ref={earthContainerRef}
+        variants={slideIn("right", "tween", 0.2, 1)}
+        className="xl:flex-1 xl:h-auto md:h-[550px] h-[350px] flex items-center justify-center"
+      >
+        {isEarthInView ? (
+          <Suspense fallback={<DOMSpinner />}>
+            <EarthCanvas />
+          </Suspense>
+        ) : (
+          <DOMSpinner />
+        )}
       </motion.div>
     </div>
   );

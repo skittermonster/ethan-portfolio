@@ -10,12 +10,12 @@ import cpp from "./tech-stack/cpp.png";
 import java from "./tech-stack/java.png";
 
 // Import project images
-import weatherpedia from "./projects/WeatherPedia.png";
-import termpw from "./projects/termpw.png";
-import payloadmaster from "./projects/payloadmaster.png";
-import mhft from "./projects/mhft.png";
-import sketcher from "./projects/sketcher.png";
-import CompileVortex from "./projects/CompileVortex.png";
+import weatherpedia from "./projects/WeatherPedia.webp";
+import termpw from "./projects/termpw.webp";
+import payloadmaster from "./projects/payloadmaster.webp";
+import mhft from "./projects/mhft.webp";
+import sketcher from "./projects/sketcher.webp";
+import CompileVortex from "./projects/CompileVortex.webp";
 
 // Import tech logos
 import css from "./tech/css.png";
@@ -28,7 +28,7 @@ import tailwind from "./tech/tailwind.png";
 import threejs from "./tech/threejs.png";
 
 // Import common assets
-import logo from "./logo.svg";
+const logo = "";
 import github from "./github.png";
 import menu from "./menu.svg";
 import close from "./close.svg";
