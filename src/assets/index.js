@@ -16,6 +16,7 @@ import payloadmaster from "./projects/payloadmaster.webp";
 import mhft from "./projects/mhft.webp";
 import sketcher from "./projects/sketcher.webp";
 import CompileVortex from "./projects/CompileVortex.webp";
+import evcharge from "./projects/evcharge.webp";
 
 // Import tech logos
 import css from "./tech/css.png";
@@ -55,6 +56,7 @@ export {
   mhft,
   sketcher,
   CompileVortex,
+  evcharge,
   logo,
   menu,
   close,

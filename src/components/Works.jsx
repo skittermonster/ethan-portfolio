@@ -8,12 +8,12 @@ import { SectionWrapper } from "../hoc";
 import { projects } from "../constants";
 import { fadeIn, textVariant } from "../utils/motion";
 
-const ProjectCard = ({ name, description, tags, image, source_code_link }) => {
+const ProjectCard = ({ name, description, tags, image, source_code_link, live_demo_link }) => {
   return (
     <motion.div
       className="h-full"
       variants={fadeIn("up", "spring")}
-      onClick={() => window.open(source_code_link, "_blank")}
+      onClick={() => window.open(live_demo_link || source_code_link, "_blank")}
     >
       <Tilt
         options={{
@@ -30,13 +30,39 @@ const ProjectCard = ({ name, description, tags, image, source_code_link }) => {
             className="w-full h-full object-cover rounded-2xl"
           />
           <div className="absolute inset-0 bg-gradient-to-t from-black/40 via-transparent to-transparent opacity-0 group-hover:opacity-100 transition-opacity duration-300 rounded-2xl" />
-          <div className="absolute inset-0 flex justify-end m-3 card-img_hover">
+          <div className="absolute inset-0 flex justify-end m-3 card-img_hover gap-2">
+            {live_demo_link && (
+              <div
+                onClick={(e) => {
+                  e.stopPropagation();
+                  window.open(live_demo_link, "_blank");
+                }}
+                className="glass w-10 h-10 rounded-full flex justify-center items-center cursor-pointer hover:scale-105 transition"
+                title="Live Demo"
+              >
+                <svg
+                  xmlns="http://www.w3.org/2000/svg"
+                  className="w-1/2 h-1/2 text-white"
+                  fill="none"
+                  viewBox="0 0 24 24"
+                  stroke="currentColor"
+                  strokeWidth="2"
+                >
+                  <path
+                    strokeLinecap="round"
+                    strokeLinejoin="round"
+                    d="M10 6H6a2 2 0 00-2 2v10a2 2 0 002 2h10a2 2 0 002-2v-4M14 4h6m0 0v6m0-6L10 14"
+                  />
+                </svg>
+              </div>
+            )}
             <div
               onClick={(e) => {
                 e.stopPropagation();
                 window.open(source_code_link, "_blank");
               }}
               className="glass w-10 h-10 rounded-full flex justify-center items-center cursor-pointer hover:scale-105 transition"
+              title="Source Code"
             >
               <img src={github} alt="source code" className="w-1/2 h-1/2 object-contain" />
             </div>

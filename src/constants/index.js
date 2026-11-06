@@ -20,6 +20,7 @@ import {
   mathwork,
   CompileVortex,
   eduskill,
+  evcharge,
 } from "../assets";
 
 export const navLinks = [
@@ -123,6 +124,20 @@ export const projects = [
     ],
     image: CompileVortex,
     source_code_link: "https://devpost.com/software/lumina-hq152s?",
+  },
+  {
+    name: "EV Charging Infrastructure",
+    description:
+      "Interactive data visualization platform analyzing Canadian EV adoption and public charging infrastructure (2015–2024); developed custom Vega-Lite choropleth density maps, temporal growth charts, and dual-axis correlation views.",
+    tags: [
+      { name: "Vega-Lite", color: "blue-text-gradient" },
+      { name: "JavaScript", color: "green-text-gradient" },
+      { name: "Data Viz", color: "pink-text-gradient" },
+      { name: "GeoJSON", color: "yellow-text-gradient" },
+    ],
+    image: evcharge,
+    source_code_link: "https://github.com/fanyuhan0912-ui/IAT355_Assignment7",
+    live_demo_link: "https://fanyuhan0912-ui.github.io/IAT355_Assignment7/",
   },
   {
     name: "Interference",
