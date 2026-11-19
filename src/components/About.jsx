@@ -40,7 +40,7 @@ const About = () => {
         variants={fadeIn('', '', 0.1, 1)}
         className="mt-4 text-secondary text-[17px] max-w-3xl leading-[30px]"
       >
-        I'm currently pursuing a Bachelor of Science in Interactive Arts and Technology at Simon Fraser University, 
+        I graduated with a Bachelor of Science in Interactive Arts and Technology at Simon Fraser University, 
         specializing in user experience and interface (UX/UI) development, artificial intelligence, and sound design. 
         My passion for music production and innovative audio solutions drives me to blend creativity with cutting-edge technology, 
         delivering immersive experiences and intuitive interfaces. I'm eager to collaborate with forward-thinking companies, 
